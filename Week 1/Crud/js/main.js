@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	function qq(x){
 		var theElement = document.getElementById(x);
 		return theElement;
-	};
+	}
 
 	//Creat select field element and populate with options.
 	function makeGuest () {
@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		makeSelect.appendChild(makeOption);
 		}
 		selectLi.appendChild(makeSelect);
-	};		
+	}		
 
 	//Find the value of selected radio button.
 	function getSelectedRadio () {
@@ -37,7 +37,7 @@ window.addEventListener("DOMContentLoaded", function () {
 				timeValue = radios[i].value;
 			}
 		}
-	};
+	}
 
 	//using js to change CSS properties.
 	function toggleControls (n) {
@@ -58,7 +58,7 @@ window.addEventListener("DOMContentLoaded", function () {
 			default:
 			return false;
 		}
-	};
+	}
 
 	function storeData (key) {
 		if (!key){
@@ -89,7 +89,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	     	
 		function addNew () {
 			window.location.reload();
-	};
+	}
         
 	function getData () {
 		toggleControls("on");
@@ -118,6 +118,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		getImage(obj.group[1], makeSubList);
 		for(var n in obj){
 			var makeSubli = document.createElement("li");
+			var linksLi = document.createElement("li");
 			makeSubList.appendChild(makeSubli);
 			var optSubText = obj[n][0] +" "+ obj[n][1];
 			makeSubli.innerHTML = optSubText;
@@ -125,7 +126,7 @@ window.addEventListener("DOMContentLoaded", function () {
 			}
 		}
 		makeItemLinks(localStorage.key(i), linksLi); //Create our edit and delete buttons/Link for each item in local storage.
-	};
+	}
 	 	
 	//get the image for the right job
 	function getImage (jobName, makeSubList) {
@@ -134,7 +135,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		var newImg = document.createElement("img");
 		var setSrc = newImg.setAttribute("src", "images/"+ jobName + ".png");
 		imageLi.appendChild(newImg);	 	
-	};
+	}
 
 	function autoFillData(){
 	//Storing JSON Object to local storage
@@ -142,7 +143,7 @@ window.addEventListener("DOMContentLoaded", function () {
 			var id = Math.floor(Math.random ()*10000000001);
 			localStorage.setItem(id, JSON.stringify(json[n])); 
 		}
-	};
+	}
 
 	//make Item Links
 	//Create the edit and delete links for each stored item when displayed
@@ -166,7 +167,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		deleteLink.addEventListener("click", deleteItem);
 		deleteLink.innerHTML = deleteText;
 		linksLi.appendChild(deleteLink);
-	};
+	}
 	
 	function editItem(){
 	//Grab the data from our item from local storage.
@@ -199,7 +200,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	//so I can use that value when I save
 		editSubmit.addEventListener("click", validate);
 		editSubmit.key = this.key;		
-	};			
+	}			
 		
 	function deleteItem(){
 		var ask = confirm("Are you sure you want to delete this guest?");
@@ -210,7 +211,7 @@ window.addEventListener("DOMContentLoaded", function () {
 			}else{
 				alert("Guest was NOT deleted.");
 		}
-	};
+	}
 	
 	function clearLocal () {
 		if(localStorage.length === 0){
@@ -221,7 +222,7 @@ window.addEventListener("DOMContentLoaded", function () {
 				window.location.reload();
 				return false;
 		}
-	};
+	}
 
 	function validate (e){
 	//define the elements I want to check
@@ -280,12 +281,12 @@ window.addEventListener("DOMContentLoaded", function () {
 	//remember the is was passed through the editSubmit
 	storeData (this.key);
 		} 
-	};
+	}
 
 	//Variable defaults
 	var contactGroups = ["--Choose A Rate--", "Rack", "SRS", "Military"],
-		timeValue
-	;
+		timeValue;
+		
 	makeGuest ();
 
 	errMsg = qq("errors");
@@ -296,7 +297,7 @@ window.addEventListener("DOMContentLoaded", function () {
 	var clearLink = qq("clearLink");
 	clearLink.addEventListener("click", clearLocal);
 	var save = qq("save");
-	save.addEventListener("click", storeData);
+	save.addEventListener("click", validate);
 	var add = qq("addNew");
 	add.addEventListener("click", addNew);
 });
