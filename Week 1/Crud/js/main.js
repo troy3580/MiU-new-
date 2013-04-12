@@ -232,15 +232,15 @@ window.addEventListener("DOMContentLoaded", function () {
 		var getEmail = qq("email");
 	//reset the error messages
 		errMsg.innerHTML = "";
-		getGroup.style.border = "1px solid black";
-		getFname.style.border = "1px solid black";
-		getLname.style.border = "1px solid black";
-		getEmail.style.border = "1px solid black";
+		getGroup.style.border = "2px solid black";
+		getFname.style.border = "2px solid black";
+		getLname.style.border = "2px solid black";
+		getEmail.style.border = "2px solid black";
 	//Get error messages
 		var messageAry = [];
 	//group validation
 		if(getGroup.value === "--Choose A Group--"){
-			var groupError = "Please choose a job.";
+			var groupError = "Please choose a rate.";
 			getGroup.style.border = "1px solid red";
 			messageAry.push(groupError);
 		}
@@ -286,7 +286,8 @@ window.addEventListener("DOMContentLoaded", function () {
 	//Variable defaults
 	var contactGroups = ["--Choose A Rate--", "Rack", "SRS", "Military"],
 		timeValue;
-		
+		errMsg = qq("errors");
+	;
 	makeGuest ();
 
 	errMsg = qq("errors");
