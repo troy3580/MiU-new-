@@ -108,6 +108,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		 	
 		for(var i=0, j=localStorage.length; i<j; i++){
 			var makeli = document.createElement("li");
+			var linksLi = document.createElement("li");
 			makeList.appendChild(makeli);
 			var key = localStorage.key(i);
 			var value = localStorage.getItem(key);
@@ -118,7 +119,6 @@ window.addEventListener("DOMContentLoaded", function () {
 		getImage(obj.group[1], makeSubList);
 		for(var n in obj){
 			var makeSubli = document.createElement("li");
-			var linksLi = document.createElement("li");
 			makeSubList.appendChild(makeSubli);
 			var optSubText = obj[n][0] +" "+ obj[n][1];
 			makeSubli.innerHTML = optSubText;

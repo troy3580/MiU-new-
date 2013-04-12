@@ -6,21 +6,23 @@
  */
  
 body {
-	background-color: white
-	
+	background-color: #ffffe0
+	text-align:center
+		
 }
 
 form {
-	background-color: #c6c4bd
+	background-color: #ffaa89
 	
 	
 }
 
 header {
-	background-color: #dbdad1;
+	background-color: #fb7743;
 	padding-left: 5px;
 	padding-right: 5px;
 	border-style: double;
+	text-align:center
 }
 
 h1 {
@@ -33,6 +35,6 @@ h2 {
 
 
 
-button {
-	
+p {
+	text-align:center	
 }
