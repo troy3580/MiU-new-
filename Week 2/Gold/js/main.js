@@ -78,7 +78,6 @@ window.addEventListener("DOMContentLoaded", function () {
 			item.lName = ["Last Name:", qq("lName").value];
 			item.email = ["Email:", qq("email").value];
 			item.pNumber = ["Phone Number:", qq("pNumber").value];
-			item.room = ["Room #:", qq("room").value];
 			item.maintenance = ["Maintenance:", qq("maintenance").value];
 			item.time = ["Time:", timeValue];
 			item.notes = ["Notes:", qq("notes").value];
@@ -182,7 +181,6 @@ window.addEventListener("DOMContentLoaded", function () {
 		qq("lName").value = item.lName[1];
 		qq("email").value = item.email[1];
 		qq("pNumber").value = item.pNumber[1];
-		qq("room").value = item.room[1];
 		var radios = document.form[0].time;
 		for(var i=0; i<radios.length; i++){
 			if(radios[i].value = "Day" && item.time[1] == "Day"){
@@ -243,21 +241,21 @@ window.addEventListener("DOMContentLoaded", function () {
 	//group validation
 		if(getGroup.value === "--Choose A Group--"){
 			var groupError = "Please choose a rate.";
-			getGroup.style.border = "3px solid blue";
+			getGroup.style.border = "1px solid red";
 			messageAry.push(groupError);
 		}
 		 
 	//first name valitation
 		if(getFname.value === ""){
 			var fNameError = "Please enter a first name.";
-			getFname.style.border = "3px solid blue";
+			getFname.style.border = "1px solid red";
 			messageAry.push(fNameError);
 		}
 		 	
 	//last name validation
 		if(getLname.value === ""){
 			var lNameError = "Please enter a last name.";
-			getLname.style.border = "3px solid blue";
+			getLname.style.border = "1px solid red";
 			messageAry.push(lNameError);
 		}
 		 	
@@ -265,7 +263,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 		if(!(re.exec(getEmail.value))){
 			var emailError = "Please enter a valid Email Address";
-			getEmail.style.border = "3px solid blue";
+			getEmail.style.border = "1px solid red";
 			messageAry.push(emailError);
 		}
 			 

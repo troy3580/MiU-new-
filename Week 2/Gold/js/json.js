@@ -7,7 +7,6 @@ var json = {
 		"lName":     ["Last Name:", "Peterson"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Anthony@fullsail.edu"],
-		"room":		 ["Room #:", "245"],
 		"time":		 ["Time:", "Day"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Always on time!"]
@@ -19,7 +18,6 @@ var json = {
 		"lName":     ["Last Name:", "Valdez"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Blanca@fullsail.edu"],
-		"room":		 ["Room #:", "200"],
 		"time":		 ["Time", "Day"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Friendly."]
@@ -31,7 +29,6 @@ var json = {
 		"lName":     ["Last Name:", "Comestock"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Kevin@fullsail.edu"],
-		"room":		 ["Room #:", "100"],		
 		"time":		 ["Time:", "Day"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Tips Well."]
@@ -43,7 +40,6 @@ var json = {
 		"lName":     ["Last Name:", "Pad"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Lilli@fullsail.edu"],
-		"room":		 ["Room #:", "101"],
 		"time":		 ["Time:", "Day"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Always late."]
@@ -55,7 +51,6 @@ var json = {
 		"lName":     ["Last Name:", "Wooten"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "cruz@fullsail.edu"],
-		"room":		 ["Room #:", "123"],
 		"time":		 ["Time:", "Day"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Very nice."]
@@ -67,7 +62,6 @@ var json = {
 		"lName":     ["Last Name:", "Martin"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Loura@fullsail.edu"],
-		"room":		 ["Room #:", "232"],
 		"time":		 ["Time:", "Night"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Doesn't have a cell phone."]
@@ -79,7 +73,6 @@ var json = {
 		"lName":     ["Last Name:", "Comestock"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Kevin@fullsail.edu"],
-		"room":		 ["Room #:", "111"],
 		"time":		 ["Time:", "Day"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Has a dog."]
@@ -91,7 +84,6 @@ var json = {
 		"lName":     ["Last Name:", "Sully"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Ryan@fullsail.edu"],
-		"room":		 ["Room #:", "105"],
 		"time":		 ["Time:", "Day"],
 		"reliable":  ["Maintenance:", "95"],
 		"notes":     ["Notes:", "Leaves Tips."]
@@ -103,7 +95,6 @@ var json = {
 		"lName":     ["Last Name:", "Daily"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Mark@fullsail.edu"],
-		"room":		 ["Room #:", "148"],
 		"time":		 ["Time:", "Night"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Has a cat."]
@@ -115,7 +106,6 @@ var json = {
 		"lName":     ["Last Name:", "Stevenson"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Janna@fullsail.edu"],
-		"room":		 ["Room #:", "155"],
 		"time":		 ["Time:", "Night"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Friedly."]
@@ -127,7 +117,6 @@ var json = {
 		"lName":     ["Last Name:", "Tall"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Glen@fullsail.edu"],
-		"room":		 ["Room #:", "107"],
 		"time":		 ["Time:", "Night"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Comes in late at night."]
@@ -139,7 +128,6 @@ var json = {
 		"lName":     ["Last Name:", "Green"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Trevor@fullsail.edu"],
-		"room":		 ["Room #:", "202"],
 		"time":		 ["Time:", "Night"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Has an aniversory coming up."]
@@ -151,7 +139,6 @@ var json = {
 		"lName":     ["Last Name:", "Lander"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Todd@fullsail.edu"],
-		"room":		 ["Room #:", "213"],
 		"time":		 ["Time:", "Night"],
 		"reliable":  ["Maintenance:", "80"],
 		"notes":     ["Notes:", "No car."]
@@ -163,7 +150,6 @@ var json = {
 		"lName":     ["Last Name:", "Blanca"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "LB@fullsail.edu"],
-		"room":		 ["Room #:", "114"],
 		"time":		 ["Time:", "Day"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Always funny."]
@@ -175,7 +161,6 @@ var json = {
 		"lName":     ["Last Name:", "Golzolis"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Edgar@fullsail.edu"],
-		"room":		 ["Room #:", "133"],
 		"time":		 ["Time:", "Day"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes", "Nice folks."]
@@ -187,7 +172,6 @@ var json = {
 		"lName":     ["Last Name:", "Johnson"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Johnson@fullsail.edu"],
-		"room":		 ["Room #:", "106"],
 		"time":		 ["Time:", "Day"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Drives a red car."]
@@ -199,7 +183,6 @@ var json = {
 		"lName":     ["Last Name:", "Taylor"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Ed@fullsail.edu"],
-		"room":		 ["Room #:", "200"],
 		"time":		 ["Time:", "Day"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Comes in early."]
@@ -211,7 +194,6 @@ var json = {
 		"lName":     ["Last Name:", "Martinez"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Gloria@fullsail.edu"],
-		"room":		 ["Room #:", "204"],
 		"time":		 ["Time:", "Day"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Lives in town."]
@@ -223,7 +205,6 @@ var json = {
 		"lName":     ["Last Name:", "Wood"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Karen@fullsail.edu"],
-		"room":		 ["Room #:", "205"],
 		"time":		 ["Time:", "Night"],
 		"reliable":  ["Maintenance:", "65"],
 		"notes":     ["Notes:", "Drives a blue car."]
@@ -235,7 +216,6 @@ var json = {
 		"lName":     ["Last Name:", "Sue"],
 		"pNumber":   ["Phone Number:", "(775)555-5555"],
 		"email":     ["Email:", "Patty@fullsail.edu"],
-		"room":		 ["Room #:", "109"],
 		"time":		 ["Time:", "Night"],
 		"reliable":  ["Maintenance:", "100"],
 		"notes":     ["Notes:", "Lives CLose."]
