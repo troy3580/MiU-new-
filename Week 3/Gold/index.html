@@ -1,0 +1,351 @@
+<!DOCTYPE>
+<!--HTML TAG-->
+<html>
+<Head>
+	<meta charset="utf-8"/>
+
+<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on"/>
+
+<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/style.css"/>
+
+<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+		
+	<title>Guest List</title>
+	
+	</head>
+		<body>
+<!--			<lable for="search" id="search">Search:<input type="search" name="search"><input type="submit"><br>  -->
+			
+			<div data-role="page" id="home" data-add-back-btn="true">
+			
+				<div data-role="header" data-position="fixed">
+					<h3>Search Guest</h3>
+				</div>
+				<nav>
+					<a href="#form"</a>
+					<img src="images/cta.png" data-role=    href="#form" alt="some_text" data-ajax="false"></a>
+				</nav>
+				
+				<div class="content" data-roll"content">
+				<p>A list of all my Arrivals, Departures, and In House Guest's.</p>			
+				</div>
+				
+				<a href="#browse" data-role="button">Browse Amenities</a>
+				<a href="#arrivals" data-role="button">Arrivals</a>
+				<a href="#departing" data-role="button">Departing</a>
+				<a href="#in_house" data-role="button">In House</a>
+				<a href="#dnr" data-role="button">DNR</a>
+
+				<div data-role="footer" data-position="fixed">		
+					<nav data-role="navbar">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#form">Form</a></li>
+							<li><a href="#info">Info</a></li>
+						</ul>
+					</nav>
+				
+				</div>
+			
+			</div>
+<!--------------------------->
+
+			<div data-role="page" id="form" data-add-back-btn="true">
+
+
+					<a href="index.html"</a>
+					<img src="images/cta_small.png" href="addemployee.html" alt="some_text"></a>
+					
+					<header><h1 id="test">Add Guest</h1></header>
+				<nav>
+					<a href="#" id="clearLink" data-ajax="false">Clear All</a>
+					<a href="#" id="displayLink" data-ajax="false">Display Guests</a>
+					<a href="addemployee.html" id="addNew" style="display:none;">Add New</a>
+				</nav>	
+				<form action="#" method="post" id="guestForm">		
+					<fieldset id="employeeFieldset">		
+						
+						<legend>Add Guest:</legend>			
+						<span>* fields are required</span><br>
+						<ul id="errors"></ul><br>
+							<li id="select"> <label for="group">*Add To Group:</label><br /></li> 
+							<li> <label for="fName">   *First Name    </label> <input type="text" id="fName"  name="fName" value="Enter First Name"/></li>		 
+							<li> <label for="lName">   *Last Name     </label> <input type="text" id="lName"  name="lNmae" value="Enter Last Name" /></li>	 
+							<li> <label for="email">   *Email         </label> <input type="text" id="email"  name="email" value="Enter eMail"	/></li>
+							<li> <label for="pNumber"> Phone Number   </label> <input type="text" id="pNumber"/></li>	
+								<ul class="radio">
+									<li> <label for="time" > Time of Checkin</label> </li>
+									<input type="radio" id="days"   value="Days"   name="time"/><label for="days">   Morning    </label><br>		
+									<input type="radio" id="nights" value="Nights" name="time"/><label for="nights"> Evening  </label><br>
+								</ul>			
+							<li> <label for="reliable"> Maintenance </label> <Br> <input type="range" min="0" max="100" id="maintenance"/></li>
+							<li> <label for="notes">    Notes</label> <br>
+							<textarea rows="4" cols="40" id="notes"> </textarea></li>				
+						</ul>
+					</fieldset>
+					<input type="submit" value="Save Contact" id="save" /><br />		
+				</form>		
+			
+				<div data-role="footer" data-position="fixed">		
+					<nav data-role="navbar">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#form">Form</a></li>
+							<li><a href="#">Info</a></li>
+						</ul>
+					</nav>
+				
+				</div>
+			</div>
+
+<!--------------------------->
+
+			<div data-role="page" id="browse" data-add-back-btn="true">
+			
+			<div data-role="header" data-position="fixed">
+					<h3>Amenities</h3>
+			</div>
+				
+			<a href="index.html"</a>
+			<img src="images/cta_small.png" href="addemployee.html" alt="some_text"></a><br>
+
+			<header>Choose what you need.</header>
+
+			<img src="images/2_bed.png" href="addemployee.html" alt="some_text"></a>
+			<img src="images/bed.png" href="addemployee.html" alt="some_text"></a>
+			<img src="images/cat.png" href="addemployee.html" alt="some_text"></a>
+			<img src="images/no_smoke.png" href="addemployee.html" alt="some_text"></a>
+			<img src="images/smoke.png" href="addemployee.html" alt="some_text"></a>
+			<img src="images/fridge.png" href="addemployee.html" alt="some_text"></a>
+
+
+			<a href="index.html"</a>
+			<img src="images/back.png" href="index.html" alt="some_text"></a>
+
+			<div data-role="footer" data-position="fixed">		
+					<nav data-role="navbar">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#form">Form</a></li>
+							<li><a href="#">Info</a></li>
+						</ul>
+					</nav>
+				
+				</div>
+
+			
+			</div>
+
+<!--------------------------->
+
+			<div data-role="page" id="arrivals" data-add-back-btn="true">
+				
+			<body>
+				<a href="index.html"</a>
+				<img src="images/cta_small.png" href="addemployee.html" alt="some_text"></a>
+			</body>
+			
+			
+			
+			
+			
+			<div data-role="header" data-position="fixed">
+				<h3>Search Arrivals</h3>
+			</div>
+			
+				<p>4/19/13</p>
+				<p>PJ House</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Nick Mouse</p>
+				<p>(775)555-5555</p><br>
+				<header></header>			
+				<p>4/19/13</p>
+				<p>Todd Duck</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Rick Gadget</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Jay Lane</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Luke Vader</p>
+				<p>(775)555-5555</p><br>
+
+			<div data-role="footer" data-position="fixed">		
+					<nav data-role="navbar">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#form">Form</a></li>
+							<li><a href="#">Info</a></li>
+						</ul>
+					</nav>
+				
+				</div>
+
+	
+			</div>
+
+<!--------------------------->
+
+			<div data-role="page" id="departing" data-add-back-btn="true">
+				
+			<div data-role="header" data-position="fixed">
+				<h3>Search Departing</h3>
+			</div>
+		
+			<body>
+				<a href="index.html"</a>
+				<img src="images/cta_small.png" href="addemployee.html" alt="some_text"></a>
+								
+
+			</body>
+				
+				
+				
+				<p>4/19/13</p>
+				<p>PJ House</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Nick Mouse</p>
+				<p>(775)555-5555</p><br>
+				<header></header>			
+				<p>4/19/13</p>
+				<p>Todd Duck</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Rick Gadget</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Jay Lane</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Luke Vader</p>
+				<p>(775)555-5555</p><br>
+				
+			<div data-role="footer" data-position="fixed">		
+					<nav data-role="navbar">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#form">Form</a></li>
+							<li><a href="#">Info</a></li>
+						</ul>
+					</nav>
+				
+				</div>
+	
+
+
+			</div>
+
+
+
+			<div data-role="page" id="in_house" data-add-back-btn="true">
+				
+			<div data-role="header" data-position="fixed">
+				<h3>Hotel Map</h3>
+			</div>
+
+			
+			<body>
+				<a href="index.html"</a>
+				<img src="images/cta_small.png" href="addemployee.html" alt="some_text"></a>
+				
+				<header>In House Map</header>
+	
+				<img src="images/map.png" href="addemployee.html" alt="some_text"></a>
+
+			</body>
+			
+
+				<a href="index.html"</a>
+				<img src="images/back.png" href="index.html" alt="some_text"></a>
+			</div>
+
+
+			<div data-role="page" id="dnr" data-add-back-btn="true">
+				
+			<body>
+				<a href="index.html"</a>
+				<img src="images/cta_small.png" href="addemployee.html" alt="some_text"></a>
+
+			</body>
+				
+			<div data-role="header" data-position="fixed">
+				<h3>Do Not Rent List</h3>
+			</div>
+				
+				
+				
+				<p>4/19/13</p>
+				<p>PJ House</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Nick Mouse</p>
+				<p>(775)555-5555</p><br>
+				<header></header>			
+				<p>4/19/13</p>
+				<p>Todd Duck</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Rick Gadget</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Jay Lane</p>
+				<p>(775)555-5555</p><br>
+				<header></header>
+				<p>4/19/13</p>
+				<p>Luke Vader</p>
+				<p>(775)555-5555</p><br>
+				
+
+
+			<div data-role="page" id="info" data-add-back-btn="true">
+			
+			<body>
+				<a href="index.html"</a>
+				<img src="images/cta_small.png" href="addemployee.html" alt="some_text"></a>
+			</body>
+				
+			<div data-role="header" data-position="fixed">
+				<h3>Info</h3>
+			</div>
+				<div class="content" data-roll"content">
+					<P>General Manager</P>
+					<p>Troy Stevenson.</p>
+					<p>1901 S. Virginia St.</p>
+					<p>Reno, NV 89502</p>
+					<p>p:(771)827-0255</p>
+					<p>e-Mail:troystevenson@icloud.com</p>
+				</div>
+			</div>
+	
+
+		<!--javascript links -->
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+		</body>
+</html>

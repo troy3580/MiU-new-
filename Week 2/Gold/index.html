@@ -1,26 +1,40 @@
 <!DOCTYPE>
 <!--HTML TAG-->
 <html>
-	<Head>
-		<meta charset="utf-8"/>
-		<meta name="description" content="I'm so excited about learning html"/>
-		<meta name="keywords" content="html, mobile development, apps"/>
-		<meta name="robots" content="index, fallow"/>
-		<meta name="viewport" content="user-scalable-no, width=device-width"/>
-		<link href="css/style.css" rel="stylesheet"/>
-		<title>Guest List</title>
+<Head>
+	<meta charset="utf-8"/>
+
+<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True"/>
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on"/>
+
+<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/style.css"/>
+
+<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+		
+	<title>Guest List</title>
+	
 	</head>
 		<body>
-			<lable for="search" id="search">Search:<input type="search" name="search"><input type="submit"><br>
+<!--			<lable for="search" id="search">Search:<input type="search" name="search"><input type="submit"><br>  -->
 			
+			<div data-role="page" id="home" data-add-back-btn="true">
+			<header data-roll="header"><h3>Search Guest list</h3></header>
+
 			<nav>
-			<a href="addemployee.html"</a>
-			<img src="images/cta.png" href="addemployee.html" alt="some_text"></a>
+				<a href="addemployee.html"</a>
+				<img src="images/cta.png" href="addemployee.html" alt="some_text" data-ajax="false"></a>
 			</nav>
 			
-			<header>Search Hotel</header>
-
-			<p> A list of all my Arrivals, Departures, and In House Guest's.</p>
+			<div class="content" data-roll"content">
+			<p>A list of all my Arrivals, Departures, and In House Guest's.</p>			
 			
 			<a href="browse.html"</a>
 			<img src="images/browse.png" href="addEmployee.html" alt="some_text"></a>
@@ -36,6 +50,26 @@
 			<!--News Feed-->			
 			<a href="dnr.html"</a>
 			<img src="images/dnr.png" href="addEmployee.html" alt="some_text"></a>
+
+			<div data-role="footer" data-position="fixed">		
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Change</a></li>
+						<li><a href="#">Search</a></li>
+					</ul>
+				</nav>
+			</div>
+			
+			
+			
+			
+			
+
+		<!--javascript links -->
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 
 		</body>
 </html>
