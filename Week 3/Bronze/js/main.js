@@ -301,4 +301,77 @@ window.addEventListener("DOMContentLoaded", function () {
 	save.addEventListener("click", validate);
 	var add = qq("addNew");
 	add.addEventListener("click", addNew);
+	
+	//Search
+	
+	var search = qq("searchBtn");
+	search.addEventListener("click", getSearch);
+	
+	function getSearch{}{
+		var category = qq("groups").value;
+		var guest = qq("search").value;
+	
+		if(category != "--Choose A Rate--" && guest ==""){
+			var makeDiv = document.createElement("div");
+			makeDiv.setAttribute("id", "items");
+			var makeList = document.createElement("ul");
+			makeDiv.appendChild(makeList);
+			document.body.appendChild(makeDiv);
+
+			for(var i=0, j=localStorage.length; i<j; i++){
+				var makeli = document.createElement("li");
+				var linksLi = document.createElement("li");
+				makeList.appendChild(makeli);
+	
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var obj = JSON.parse(value);
+				var makeSubList = document.createElement("ul");
+				makeli.appendChild(makeSubList);
+				
+				if(category === item.group[1]{
+					for(n in obj){
+						var makeSubli = document.createElement("li");
+						makeSubList.appendChild(makeSubli);
+						var optSubText = obj[n][0] +" "+ obj[n][1];
+						makeSubli.innerHTML = optSubText;
+						makeSubList.appendChild(linksLi);
+
+						
+//						console.log(obj[n][0]+": "+obj[n][1]);
+					}
+				}
+			}
+		}
+	
+		if(category == "--Choose A Rate--" && guest !=""){
+			for(var i=0, j=localStorage.length; i<j; i++){
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var obj = JSON.parse(value);
+				for (n in item){
+					if(guest === item[n][1]{
+						for(m in obj){
+						console.log(obj[m][0]+": "+obj[m][1]);
+						}
+					}
+				}
+			}
+		}
+	
+		if(category != "--Choose A Rate--" && guest !=""){
+			for(var i=0, j=localStorage.length; i<j; i++){
+				var key = localStorage.key(i);
+				var value = localStorage.getItem(key);
+				var obj = JSON.parse(value);
+				for (n in item){
+					if(category === item.group[1] && guest ===[n][1]){
+						console.log(item[m][0]+" : "+item[m][1]);
+					}
+				}
+			}
+		}	
+	}
+	
+	
 });
